@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BasicDirective } from './basic-directives/basic-directive';
 import { RendererDirective } from './render/renderer.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicDirective,
-    RendererDirective
+    RendererDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
