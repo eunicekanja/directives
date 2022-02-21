@@ -11,4 +11,5 @@ export class AppComponent {
   oddNumber=[1,2,3];
   evenNumbers=[2,4]
   onlyOdd=false;
+  showList=false;
 }
