@@ -1,0 +1,25 @@
+<!--NG CLASS-->
+<p isOpen [ngClass]="{'clicked':isOpen===true,'caps':isCaps===true}">object in ng class</p>
+<p [ngClass]="!isCaps ? 'caps':''">ternary operator in ng class</p>
+<p [ngClass]="['clicked','caps']">array in ng class</p>
+<button (click)="changeColor()">change color</button>
+
+<!--NG CLASS-->
+<p [ngStyle]="{'height.px':{height}}">object in ng style</p>
+<p [ngStyle]="{'backgroundColor':'red'}">object in ng style</p>
+<p [ngStyle]="{styles}">object declared in the ts file</p>
+
+<!--NG plural-->
+<some-element [ngPlural]="value">
+    <ng-template ngPluralCase="=0">there is nothing</ng-template>
+    <ng-template ngPluralCase="=1">there is one</ng-template>
+    <ng-template ngPluralCase="few">there are a few</ng-template>
+</some-element>
+<!--NG if with directive-->
+<ul *appValues="show">
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+</ul>
